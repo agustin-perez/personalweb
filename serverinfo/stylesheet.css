@@ -1,5 +1,5 @@
 /*Agperez css source*/
-
+* {box-sizing:border-box}	
 body, html
 {
   margin: 0; 
@@ -243,76 +243,3 @@ footer
 	text-decoration: none;
 	color: gainsboro;
 }
-
-.main
-{
-  background-color: rgb(20, 20, 20);
-}
-
-.lineaSeparar
-{
-  background-color: rgb(60, 60, 60);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  height: 4vh;
-}
-
-/* Pop-Up */
-.ventanaPopUp {
-  display: none;
-  overflow-y: initial;
-  position: fixed;
-  z-index: 5;
-  left: 0;
-  top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: hidden;
-  animation: popupanimation 2s forwards;
-  -webkit-animation: popupanimation 2s forwards;
-}
-
-@keyframes popupanimation
-{
-  0%   {top:-150%; background-color: rgba(0,0,0,0.0);}
-  80%  {top:0; background-color: rgba(0,0,0,0.0);}
-  100% {background-color: rgba(0,0,0,0.8);}
-}
-
-/* Navegadores viejos */
-@-webkit-keyframes popupanimation
-{
-  0%   {top:-150%; background-color: rgba(0,0,0,0.0);}
-  80%  {top:0; background-color: rgba(0,0,0,0.0);}
-  100% {background-color: rgba(0,0,0,0.8);}
-}
-
-.infoPopUp {
-  font-size: 150%;
-  text-align: center;
-  border-radius: 7px;
-  overflow-y: auto;
-  background-color: #edebeb;
-  margin: auto;
-  margin-top: 10%;
-  padding: 15px;
-  border: 1px solid #888;
-  max-width: 60%;
-  max-height: 70%;
-}
-
-.cerrarPopUp {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.cerrarPopUp:hover,
-.cerrarPopUp:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-

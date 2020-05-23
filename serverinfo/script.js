@@ -81,4 +81,4 @@ window.onclick = function(e)
   }  
 } 
 
-/*window.onload = abrirPopUp; */
+window.onload = abrirPopUp; 
